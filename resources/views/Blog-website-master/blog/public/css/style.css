@@ -1,0 +1,31 @@
+#h1{
+	margin-top: 18px;
+}
+.well{
+	background-color: #EFEBEB;
+}
+
+.comment{
+	margin-bottom: 25px;
+}
+.author-image{
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+	float: left;
+}
+.author-name{
+	margin:5px;
+	margin-left: 10px;
+}
+
+.author-time{
+	font-size: 11px;
+	font-style: italic;
+	color: #aaa;
+}
+.comment-content{
+	margin-left: 60px;
+	font-size: 16px;
+	line-height: 1.3em;
+}

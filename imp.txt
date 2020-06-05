@@ -1,0 +1,72 @@
+#############################################################################
+Name of model is singular but table name is plural.
+php artisan make:model feedback -m
+composer create-project --prefer-dist laravel/laravel laravel "5.4.*"
+php artisan migrate
+php artisan make:auth
+php artisan make:migration create-post-table --create=posts
+php artisan migrate:rollback
+php artisan migrate:rollback --step=1
+php artisan migrate:reset  
+###########################################################################
+…or create a new repository on the command line
+echo "# onlineinsurance" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/codemonk-codemonk/onlineinsurance.git
+git push -u origin master
+…or push an existing repository from the command line
+git remote add origin https://github.com/codemonk-codemonk/onlineinsurance.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+############################################################################################
+git config --global user.email "abhi.codeforfun777@gmail.com"  // Just to identify programmer who is going to work on the project.
+git config --global user.email "Abhishek Jadhav"	       // Just to identify programmer who is going to work on the project.
+It's not a Git error message, it's the editor as git uses your default editor.
+
+To solve this:
+
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
+
+1. git init
+2. git add [filename] || -A
+3. git status
+4. git commit -m "msg"
+5. git remote add origin repoName
+6. git push origin master
+7. git clone repoName
+8. git pull origin master
+9. git branch
+10. git branch loginsystem2
+11. git checout loginsystem2
+You are in master
+$ git merge submaster
+git log
+ls
+git log -2 //last to commit.
+git log --oneline
+git log --author="Abhishek Jadhav"  // Search commit with programmer name with case sensitive.
+git log -i --author="abhiSHek jadhaV" //	Search commit with programmer name without case sensitive.
+git log --grep="add"  //search add with case sensitive.
+git log -i --grep="add" //search add without case sensitive.
+git log -i -p --grep="add" //search in code
+####################################################################
+https://codersfolder.com/2018/03/restaurant-management-system-codeigniter/
+
+laravel new myApp
+
+php artisan make:migration create_products_table --create=products
+
+php artisan migrate
+
+php artisan make:controller PaymentController --resource
+
+php artisan serve
+
+<input type="text" name="firstname" value="<?php echo $arr['firstname']; ?>">

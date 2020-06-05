@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+}
+
+
+
+
+
+
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:black;
+  text-align: right; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri;
+
+  color:black; 
+  font-size: 15pt; 
+  font-style: normal;
+  font-weight: bold;
+  table-layout: auto;
+  text-align: ;
+  
+  background-color:white; 
+  border-collapse: collapse; 
+  border: 4px solid black
+}
+table.inner{
+  border: 5px
+}
+
+
+
+

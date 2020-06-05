@@ -1,0 +1,301 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family:"Roboto Cn", sans-serif;
+
+}
+body{
+	overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+.container{
+	max-width: 120rem;
+	width: 90%;
+	margin:0 auto;
+}
+
+nav{
+	padding-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+}
+.insurance{
+	font-size: 3rem;
+	font-weight:300; 
+   transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+}
+.insurance span{
+	color: crimson;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+
+nav ul li:nth-child(1){
+	animation-delay: : 0s;
+}
+nav ul li:nth-child(2){
+	animation-delay: : .5s;
+}
+nav ul li:nth-child(3){
+	animation-delay: : 1s;
+}
+nav ul li:nth-child(4){
+	animation-delay: : 1.5s;
+}
+nav ul li a{
+	padding: 1rem 0;
+	margin:0 3rem;
+	position: relative;
+	letter-spacing: 2px
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition:all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin:left; 
+}
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn{
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+
+ #videolayout{
+
+ 	min-width: 100%;
+ 	min-height: 85vh;
+ 	position: absolute;
+ 	bottom: 0;
+ 	right: 0;
+ }
+
+ .overlay{
+ 	width: 100%;
+ 	height: 100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	background-color: rgb(0,0,0,0,4);
+ }
+ section{
+ 	width: 100%;
+ 	height: 100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	display: flex;
+ 	align-items:center;
+ 	justify-content: center;
+ 	text-align: center; 
+ 	color: white;
+
+ }
+ .cityText h1{
+ 	font-size: 3.4em;
+ }
+ .cityText p{
+ 	font-size: 2.5em;
+ 	margin-bottom: 20px;
+ }
+ .cityText p1{
+ 	font-size: 0.5;
+ 	margin-bottom: 20px;
+ }
+
+ .cityText button{
+ 	width: 100px;
+ 	height: 30px;
+ 	font-size: 1.5em;
+ 	background-color: transparent;
+
+ 	color: white;
+ 	border-radius: 10%;
+ 	border-color: white;
+ }
+
+ .cityText button:hover{
+ 	background-color: crimson;
+ 	color: white;
+
+ }
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+
+
+
+ animation: slideIn .5s forwards;
+ list-style: none;
+	transform: translateX(100rem);
+}
+
+.dropbtn:pnth-child(1){
+	animation-delay: : 0s;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #F2EFEE ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #D0D7DC;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+.dropbtn:plast-child{
+	margin-right: 0;
+}
+.dropbtn::before,
+.dropbtn::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition:all .5s;
+}
+
+.dropbtn::before{
+	top: 0;
+	transform-origin:left; 
+}
+.dropbtn::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+.dropbtn:hover::before,
+.dropbtn:hover::after{
+	transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+.dropdown-content:dlast-child{
+	margin-right: 0;
+}
+.dropdown-content::before,
+.dropdown-content::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition:all .5s;
+}
+
+.dropdown-content::before{
+	top: 0;
+	transform-origin:left; 
+}
+.dropdown-content::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+.dropdown-content:hover::before,
+.dropdown-content:hover::after{
+	transform: scaleX(1);
+}
